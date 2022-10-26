@@ -2,7 +2,15 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import ContentProject from '../src/components/ContentProject'
 import ContentTools from '../src/components/ContentTools/ContentTools'
+import ContentContacts from '../src/components/ContentContacts/ContentContacts'
 import Hero from '../src/components/Hero'
+import {
+    AiOutlineInstagram,
+    AiOutlineWhatsApp,
+    AiOutlineLinkedin
+} from 'react-icons/ai'
+import Link from 'next/link'
+import Footer from '../src/components/Footer/Footer'
 
 const Home: NextPage = () => {
     return (
@@ -22,6 +30,8 @@ const Home: NextPage = () => {
             />
             <ContentProject id="project" />
             <ContentTools id="tools" />
+            <ContentContacts id="contact" />
+            <Footer />
         </div>
     )
 }
