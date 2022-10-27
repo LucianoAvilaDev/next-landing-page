@@ -24,6 +24,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Hero
+                id='home'
                 heading="Landing Page Next App"
                 message="Landing Page construída com Next.js e Tailwind"
                 button="Cadastrar"
