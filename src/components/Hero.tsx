@@ -20,15 +20,15 @@ const Hero = ({ id, heading, message, button }: Props) => {
     )
 
     return (
-        <>
+        <div>
             <div
                 id={id}
-                className="flex items-center justify-center h-screen opacity-90 bg-fixed bg-center bg-cover custom-img"
+                className="flex px-4 items-center justify-center h-screen opacity-90 bg-fixed bg-center bg-cover custom-img"
             >
                 <div className="absolute top-0 left-0 right-0 bottom-0  h-screen bg-black/40 z-[2]" />
-                <div className="text-white z-[2] ">
+                <div className="flex flex-col text-center justify-center items-center text-white z-[2] ">
                     <h2 className="text-3xl sm:text-5xl font-bold">{heading}</h2>
-                    <p className="py-5 text-xl">{message}</p>
+                    <p className="py-5 text-md sm:text-xl">{message}</p>
                     <Button
                         title={button ?? ''}
                         action={(
@@ -40,7 +40,7 @@ const Hero = ({ id, heading, message, button }: Props) => {
                 </div>
             </div>
             <ToastContainer
-                position="top-right"
+                position="bottom-right"
                 autoClose={2000}
                 hideProgressBar={false}
                 newestOnTop={true}
@@ -51,7 +51,7 @@ const Hero = ({ id, heading, message, button }: Props) => {
                 theme="colored"
                 transition={Flip}
             />
-        </>
+        </div>
     )
 }
 

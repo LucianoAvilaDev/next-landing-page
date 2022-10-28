@@ -8,18 +8,18 @@ const ContentProject = ({ id }: Props) => {
     return (
         <div
             id={id}
-            className="flex h-auto py-12 bg-gray-300 items-center justify-center"
+            className="flex w-full h-auto py-12 bg-gray-300 items-center justify-center"
         >
-            <div className="text-center text-gray-700 z-[2] ml-[-[10rem]]">
-                <h2 className="text-5xl py-6 mb-12 border-orange-800/30 border-b mx-24 md:mx-48">
+            <div className="w-full text-center text-gray-700 z-[2] ml-[-[10rem]]">
+                <h2 className="text-3xl sm:text-5xl py-4 sm:py-6 mb-12 border-orange-800/30 border-b mx-4 md:mx-48">
                     Sobre o Projeto
                 </h2>
-                <p className="block text-justify py-6 md:px-48 text-xl ">
+                <p className="text-justify py-6 mx-4 md:px-48 text-md sm:text-xl ">
                     Projeto de uma Landing Page desenvolvido com intuito de
                     aprendizado utilizando Typescript e React com os frameworks
                     Next.js com Tailwind.
                 </p>
-                <p className="text-justify py-6 md:px-48 text-xl">
+                <p className="text-justify py-6 mx-4 md:px-48 text-md sm:text-xl">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Phasellus fringilla, neque non mattis dignissim, lectus diam
                     dictum libero, vitae maximus nisl ex non felis. Nulla

@@ -14,7 +14,7 @@ import Footer from '../src/components/Footer/Footer'
 
 const Home: NextPage = () => {
     return (
-        <div>
+        <div className='w-full'>
             <Head>
                 <title>Landing Page Next App</title>
                 <meta
