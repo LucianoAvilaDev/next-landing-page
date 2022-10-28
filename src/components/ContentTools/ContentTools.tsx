@@ -16,16 +16,16 @@ const ContentTools = ({ id }: Props) => {
             className="flex w-full h-auto py-12 bg-black/80 items-center justify-center"
         >
             <div className="text-center w-full sm:w-3/4 text-gray-700 z-[2] ml-[-[10rem]]">
-                <h2 className="text-5xl text-white/90 pt-4 mb-8  mx-24 md:mx-48">
+                <h2 className="text-3xl sm:text-5xl text-white/90 pt-4 mb-6 mx-4 md:mx-48">
                     Ferramentas utilizadas
                 </h2>
-                <div className="flex justify-between border-white/80 border-t py-16">
+                <div className="flex flex-wrap sm:flex-row justify-center sm:justify-between border-white/80 border-t mx-4 py-8">
                     {Links.map((link) => {
                         return (
                             <a
                                 key={link.tooltip}
                                 href={link.url}
-                                className="transition-transform scale-100 hover:scale-[1.15] duration-300"
+                                className="p-4 transition-transform scale-100 hover:scale-[1.15] duration-300"
                             >
                                 <Img
                                     key={link.tooltip}
