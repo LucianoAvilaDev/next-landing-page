@@ -35,7 +35,7 @@ const Navbar = ({ title, menus }: Nb) => {
                     </div>
                 </div>
                 <div
-                    className={`sm:hidden  transition-transform scale-y-${open} origin-top fixed z-[3] w-full bg-[#ff9d00]700/50`}
+                    className={(open == 0 ? 'scale-y-0 ' : 'scale-y-100 ') + `sm:hidden  transition-transform origin-top fixed z-[3] w-full bg-[#ff9d00]/50`}
                 >
                     <ul className="flex px-4 flex-col border-t-2 pb-2 border-white/30 w-full`">
                         {menus?.map((m) => {

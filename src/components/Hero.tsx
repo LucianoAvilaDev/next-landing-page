@@ -23,11 +23,11 @@ const Hero = ({ id, heading, message, button }: Props) => {
         <>
             <div
                 id={id}
-                className="flex items-center justify-center h-[35vw] opacity-90 bg-fixed bg-center bg-cover custom-img"
+                className="flex items-center justify-center h-screen opacity-90 bg-fixed bg-center bg-cover custom-img"
             >
-                <div className="absolute top-0 left-0 right-0 bottom-0  h-[35vw] bg-black/40 z-[2]" />
-                <div className="text-white z-[2] ml-[-[10rem]]">
-                    <h2 className="text-5xl font-bold">{heading}</h2>
+                <div className="absolute top-0 left-0 right-0 bottom-0  h-screen bg-black/40 z-[2]" />
+                <div className="text-white z-[2] ">
+                    <h2 className="text-3xl sm:text-5xl font-bold">{heading}</h2>
                     <p className="py-5 text-xl">{message}</p>
                     <Button
                         title={button ?? ''}
